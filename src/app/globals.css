@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply antialiased;
+}
+
+body, button, input, select, textarea {
+  @apply font-sans;
+}
