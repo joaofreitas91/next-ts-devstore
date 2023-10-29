@@ -4,6 +4,9 @@
 
 body {
   @apply antialiased;
+  
+  @apply bg-zinc-950;
+  @apply text-zinc-50;
 }
 
 body, button, input, select, textarea {
