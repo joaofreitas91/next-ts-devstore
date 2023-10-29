@@ -5,7 +5,5 @@ export async function api(path: string, init?: RequestInit) {
   const prefix = '/api'
   const url = new URL(prefix.concat(path), baseUrl)
 
-  console.log('API request:', url)
-
   return fetch(url, init)
 }
