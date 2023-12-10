@@ -19,6 +19,14 @@ async function getFeaturedProducts(slug: string): Promise<Product> {
   return data
 }
 
+export async function generateMetadata({ params }: ProductParams) {
+  const product = await getFeaturedProducts(params.slug)
+
+  return {
+    title: `${product.title}`,
+  }
+}
+
 export default async function Product({ params }: ProductParams) {
   const product = await getFeaturedProducts(params.slug)
 
